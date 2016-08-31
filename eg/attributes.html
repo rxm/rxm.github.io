@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Test of class attribute</title>
+ 
+   <script 
+     src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js">
+   </script>
     
     <style type="text/css">
     
@@ -62,6 +66,19 @@
       e-01234567890123456789
       f-01234567890123456789">
     </div>
+    
+    <h2>jQuery test: left and right borders?</h2>
+    
+    <div id="marked-div" class="
+      base
+      e-01234567890123456789
+      ">
+    </div>
+    
+    <script>
+      $('#marked-div').css('border-right-style', 'solid');
+      $('.e-01234567890123456789').css('border-left-style', 'solid');
+    </script>
 
   </body>
 
